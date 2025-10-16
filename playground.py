@@ -1,8 +1,8 @@
 #Add function that takes any number of arguments
 def add(*numbers):
-    temp = 0
+    sum = 0
     for num in numbers:
-        temp += num
-    return temp
+        sum += num
+    return sum
 
 print(add(5,7,40,8))
