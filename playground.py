@@ -23,3 +23,11 @@ def calculate(n, **kwargs):
     print(n)
 
 calculate(3, add=5, multiply=8)
+
+class Car:
+    def __init__(self, **kwargs):
+        self.make = kwargs.get("make") # Use .get function on kwargs to prevent errors when argument is missing
+        self.model = kwargs.get("model") # If the argument is missing it will = None
+
+my_car = Car(make="Honda")
+print(my_car.model)
