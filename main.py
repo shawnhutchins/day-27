@@ -10,9 +10,14 @@ my_label.pack()
 
 #Button
 def button_clicked():
-    my_label["text"] = "Button Got Clicked"
+    my_label["text"] = input.get()
 
 button = tk.Button(text="Click Me", command=button_clicked)
 button.pack()
+
+#Entry
+
+input = tk.Entry(width=10)
+input.pack()
 
 window.mainloop()
