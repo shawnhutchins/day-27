@@ -12,13 +12,15 @@ my_label = tk.Label(text="I am a label", font=("Arial", 24, "bold"))
 
 #Button
 button = tk.Button(text="Click Me", command=button_clicked)
+new_button = tk.Button(text="New Button", command=button_clicked)
 
 #Entry
 text_input = tk.Entry(width=10)
 
 #Packing
-my_label.pack()
-button.pack()
-text_input.pack()
+my_label.grid(row=0, column=0)
+button.grid(row=1, column=1)
+new_button.grid(row=0, column=2)
+text_input.grid(row=2, column=3)
 
 window.mainloop()
