@@ -6,9 +6,11 @@ def button_clicked():
 window = tk.Tk()
 window.title("My first GUI program")
 window.minsize(width=500, height=300)
+window.config(padx=200, pady=200)
 
 #Label
 my_label = tk.Label(text="I am a label", font=("Arial", 24, "bold"))
+my_label.config(padx=50, pady=50)
 
 #Button
 button = tk.Button(text="Click Me", command=button_clicked)
